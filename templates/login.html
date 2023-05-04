@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="{{ url_for('static', filename='img/undraw_compose_music_re_wpiw.svg') }}">
+        </div>
+        <div class="form">
+            <form method="POST" action="/logins">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Faça seu Login</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="/">Cadastrar-se</a></button>
+                    </div>
+                </div>
+
+
+                    <div class="input-box {% if use_alternate_style2 %}alternate-style2{% endif %}">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+                    </div>
+
+                    <div class="input-box {% if use_alternate_style %}alternate-style{% endif %}">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <div class="continue-button">
+                        <button><a href='/main'>Entrar</a></button>
+    
+                    </div>
+
+                </div>
+
+                
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

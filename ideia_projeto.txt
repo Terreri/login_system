@@ -1,0 +1,18 @@
+A ideia do projeto é criar um sistema de forms(cadastro e login) que crie usuários e faça com 
+que eles poossam acessar um sistema.
+
+No cadastro o usuário irá preencher as seguintes informalções: 
+
+primeiro nome
+sobrenome
+email
+celular
+senha
+confirme sua senha
+data de nascimento (adicionados posteriormente)
+CEP (adicionados posteriormente)
+
+Os usuários poderão acessar o sistema através de:
+
+email = login 
+senha = senha 
